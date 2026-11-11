@@ -90,7 +90,7 @@ game_init() {
   local i cx=$((WIDTH / 2)) cy=$((HEIGHT / 2))
   SNAKE_X=()
   SNAKE_Y=()
-  for ((i = 0; i < INITIAL_LENGTH; i++)); do
+  for ((i = 0; i < 3; i++)); do
     SNAKE_X+=("$((cx - i))")
     SNAKE_Y+=("$cy")
   done

@@ -16,10 +16,6 @@ for module in "${MODULES[@]}"; do
 done
 
 validate_config() {
-  if ((INITIAL_LENGTH < 1 || INITIAL_LENGTH > WIDTH / 2)); then
-    echo "config error: INITIAL_LENGTH must be between 1 and WIDTH/2 ($((WIDTH / 2)))." >&2
-    exit 1
-  fi
   if ((WIDTH < 6 || HEIGHT < 4)); then
     echo "config error: board is too small (min WIDTH=6, HEIGHT=4)." >&2
     exit 1
