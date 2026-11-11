@@ -33,6 +33,7 @@ draw() {
   done
   out+="$HLINE"$'\n'
   out+="Score: $SCORE"$'\e[K\n'
+  out+=$'\e[J'
 
   printf '%s' "$out"
 }

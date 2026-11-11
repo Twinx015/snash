@@ -73,7 +73,7 @@ remove_food() {
 
 ensure_food_count() {
   local want=1 n
-  if ((SCORE <= TWO_FOOD_UNTIL_SCORE)); then
+  if ((SCORE <= "70")); then
     want=2
   fi
   while ((${#FOOD_X[@]} < want)); do
